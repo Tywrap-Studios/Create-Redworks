@@ -6,23 +6,21 @@ import net.minecraft.world.item.Item
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.tywrapstudios.redwork.platform.ModPlatform
+import org.tywrapstudios.redwork.registry.ItemRegistry
 
 object Redwork {
-    const val MOD_ID: String = /*$ mod_id*/"template"
+    const val MOD_ID: String = /*$ mod_id*/"redwork"
     @JvmField
-    val LOGGER: Logger = LoggerFactory.getLogger("Template")
+    val LOGGER: Logger = LoggerFactory.getLogger("Redworks")
     lateinit var PLATFORM: ModPlatform
     @JvmField
     var REGISTRATE: CreateRegistrate = CreateRegistrate.create(MOD_ID)
 
-    val ITEM: ItemEntry<Item?> = REGISTRATE
-        .item<Item?>("item", ::Item)
-        .defaultModel()
-        .register()
-
     @JvmStatic
     fun entrypoint(platform: ModPlatform) {
         PLATFORM = platform
+
+        ItemRegistry.register()
 
         //? if fabric
         //REGISTRATE.register();

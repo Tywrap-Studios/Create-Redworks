@@ -10,7 +10,7 @@ import net.neoforged.fml.ModContainer
 import net.neoforged.fml.ModList
 import net.neoforged.fml.common.Mod
 
-@Mod(/*$ annotation_id*/"template")
+@Mod(/*$ annotation_id*/"redwork")
 class RedworkNeoForge(bus: IEventBus, container: ModContainer, kotlinModContainer: KotlinModContainer, dist: Dist) {
     init {
         Redwork.REGISTRATE.registerEventListeners(bus)
