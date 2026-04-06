@@ -1,8 +1,8 @@
 //? if fabric {
-/*package com.example.template.platforms.fabric
+/*package org.tywrapstudios.redwork.platforms.fabric
 
-import com.example.template.ModPlatform
-import com.example.template.TemplateInit
+import org.tywrapstudios.redwork.ModPlatform
+import org.tywrapstudios.redwork.TemplateInit
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.loader.api.FabricLoader
 

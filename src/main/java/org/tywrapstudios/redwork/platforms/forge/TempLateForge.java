@@ -1,8 +1,8 @@
 //? if forge {
-/*package com.example.template.platforms.forge;
+/*package org.tywrapstudios.redwork.platforms.forge;
 
-import com.example.template.ModPlatform;
-import com.example.template.TemplateInit;
+import org.tywrapstudios.redwork.ModPlatform;
+import org.tywrapstudios.redwork.TemplateInit;
 
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

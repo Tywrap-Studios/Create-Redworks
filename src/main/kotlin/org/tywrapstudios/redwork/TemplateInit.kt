@@ -1,4 +1,4 @@
-package com.example.template
+package org.tywrapstudios.redwork
 
 import com.simibubi.create.foundation.data.CreateRegistrate
 import com.tterrag.registrate.util.entry.ItemEntry

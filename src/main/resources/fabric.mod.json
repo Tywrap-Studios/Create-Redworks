@@ -16,13 +16,13 @@
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.example.template.platforms.fabric.TemplateFabric"
+        "value": "org.tywrapstudios.redwork.platforms.fabric.TemplateFabric"
       }
     ]
   },
   "mixins": [
-    "template-common.mixins.json",
-    "template-fabric.mixins.json"
+    "redwork-common.mixins.json",
+    "redwork-fabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.15",

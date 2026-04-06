@@ -1,6 +1,6 @@
-package com.example.template.mixin;
+package org.tywrapstudios.redwork.mixin;
 
-import com.example.template.TemplateInit;
+import org.tywrapstudios.redwork.TemplateInit;
 
 import net.minecraft.client.gui.screens.TitleScreen;
 

@@ -1,8 +1,8 @@
 //? if neoforge {
-package com.example.template.platforms.neoforge
+package org.tywrapstudios.redwork.platforms.neoforge
 
-import com.example.template.ModPlatform
-import com.example.template.TemplateInit
+import org.tywrapstudios.redwork.ModPlatform
+import org.tywrapstudios.redwork.TemplateInit
 import dev.nyon.klf.KotlinModContainer
 import net.neoforged.api.distmarker.Dist
 import net.neoforged.bus.api.IEventBus
