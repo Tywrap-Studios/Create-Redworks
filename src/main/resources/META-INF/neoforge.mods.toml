@@ -1,0 +1,26 @@
+modLoader = "klf"
+loaderVersion = "[1,)"
+license = "CC0"
+issueTrackerURL = "https://AuthorExample/TempLate/issues"
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+authors = "AuthorExample"
+description = ""
+logoFile = "assets/${id}/icon.png"
+logoBlur = false
+
+[[mixins]]
+config = "${id}-common.mixins.json"
+
+[[mixins]]
+config = "${id}-neoforge.mixins.json"
+
+[[dependencies.${id}]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.9,6.1.0)"
+ordering = "NONE"
+side = "BOTH"
