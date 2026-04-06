@@ -1,4 +1,4 @@
-package org.tywrapstudios.redwork
+package org.tywrapstudios.redwork.platform
 
 /**
  * This interface allows you to define platform specific code, and call it in

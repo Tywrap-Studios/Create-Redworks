@@ -1,7 +1,7 @@
 //? if forge {
-/*package org.tywrapstudios.redwork.platforms.forge;
+/*package org.tywrapstudios.redwork.platform.forge;
 
-import org.tywrapstudios.redwork.ModPlatform;
+import org.tywrapstudios.redwork.platform.ModPlatform;
 import org.tywrapstudios.redwork.TemplateInit;
 
 import net.minecraftforge.fml.ModList;
@@ -9,13 +9,9 @@ import net.minecraftforge.fml.common.Mod;import net.minecraftforge.fml.javafmlmo
 
 import org.jetbrains.annotations.NotNull;
 
-// This class is written in Java because Forge does not seem to like
-// casting the Kotlin counterpart of FMLJavaModLoadingContext provided
-// by FLK. Nonetheless, this seems to fix it for now.
-
 @Mod(/^$ annotation_id^/"template")
-public class TempLateForge {
-    public TempLateForge() {
+public class RedworkForge {
+    public RedworkForge() {
         TemplateInit.REGISTRATE.registerEventListeners(FMLJavaModLoadingContext.get().getModEventBus());
         TemplateInit.entrypoint(new ForgePlatform());
     }

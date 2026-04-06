@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "org.tywrapstudios.redwork.platforms.fabric.mixin",
+  "package": "org.tywrapstudios.redwork.platform.fabric.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],

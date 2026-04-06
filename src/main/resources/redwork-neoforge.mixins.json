@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "org.tywrapstudios.redwork.platforms.neoforge.mixin",
+  "package": "org.tywrapstudios.redwork.platform.neoforge.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],

@@ -1,8 +1,8 @@
 //? if neoforge {
-package org.tywrapstudios.redwork.platforms.neoforge
+package org.tywrapstudios.redwork.platform.neoforge
 
-import org.tywrapstudios.redwork.ModPlatform
-import org.tywrapstudios.redwork.TemplateInit
+import org.tywrapstudios.redwork.platform.ModPlatform
+import org.tywrapstudios.redwork.Redwork
 import dev.nyon.klf.KotlinModContainer
 import net.neoforged.api.distmarker.Dist
 import net.neoforged.bus.api.IEventBus
@@ -11,10 +11,10 @@ import net.neoforged.fml.ModList
 import net.neoforged.fml.common.Mod
 
 @Mod(/*$ annotation_id*/"template")
-class TemplateNeoForge(bus: IEventBus, container: ModContainer, kotlinModContainer: KotlinModContainer, dist: Dist) {
+class RedworkNeoForge(bus: IEventBus, container: ModContainer, kotlinModContainer: KotlinModContainer, dist: Dist) {
     init {
-        TemplateInit.REGISTRATE.registerEventListeners(bus)
-        TemplateInit.entrypoint(NeoForgePlatform())
+        Redwork.REGISTRATE.registerEventListeners(bus)
+        Redwork.entrypoint(NeoForgePlatform())
     }
 
     class NeoForgePlatform : ModPlatform {

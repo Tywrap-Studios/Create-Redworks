@@ -5,8 +5,9 @@ import com.tterrag.registrate.util.entry.ItemEntry
 import net.minecraft.world.item.Item
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import org.tywrapstudios.redwork.platform.ModPlatform
 
-object TemplateInit {
+object Redwork {
     const val MOD_ID: String = /*$ mod_id*/"template"
     @JvmField
     val LOGGER: Logger = LoggerFactory.getLogger("Template")
@@ -22,7 +23,7 @@ object TemplateInit {
     @JvmStatic
     fun entrypoint(platform: ModPlatform) {
         PLATFORM = platform
-        LOGGER.info("Started mod in ${PLATFORM.getModLoader()} loader")
+
         //? if fabric
         //REGISTRATE.register();
     }

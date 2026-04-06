@@ -1,12 +1,12 @@
 //? if fabric {
-/*package org.tywrapstudios.redwork.platforms.fabric
+/*package org.tywrapstudios.redwork.platform.fabric
 
-import org.tywrapstudios.redwork.ModPlatform
+import org.tywrapstudios.redwork.platform.ModPlatform
 import org.tywrapstudios.redwork.TemplateInit
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.loader.api.FabricLoader
 
-class TemplateFabric : ModInitializer {
+class RedworkFabric : ModInitializer {
     override fun onInitialize() {
         TemplateInit.entrypoint(FabricPlatform())
     }
