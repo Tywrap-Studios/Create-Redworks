@@ -1,5 +1,5 @@
 //? if fabric {
-package org.tywrapstudios.redwork.platform.fabric
+/*package org.tywrapstudios.redwork.platform.fabric
 
 import org.tywrapstudios.redwork.platform.ModPlatform
 import net.fabricmc.api.ModInitializer
@@ -21,4 +21,4 @@ class RedworkFabric : ModInitializer {
         }
     }
 }
-//?}
+*///?}

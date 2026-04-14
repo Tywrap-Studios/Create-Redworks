@@ -1,5 +1,5 @@
 //? if neoforge {
-/*package org.tywrapstudios.redwork.platform.neoforge
+package org.tywrapstudios.redwork.platform.neoforge
 
 import org.tywrapstudios.redwork.platform.ModPlatform
 import org.tywrapstudios.redwork.Redwork
@@ -28,4 +28,4 @@ class RedworkNeoForge(bus: IEventBus, container: ModContainer, kotlinModContaine
             return ModList.get().isLoaded(id)
         }
     }
-} *///?}
+} //?}
