@@ -13,10 +13,16 @@
   "icon": "assets/${id}/icon.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      {
+        "adapter": "kotlin",
+        "value": "org.tywrapstudios.redwork.platform.fabric.data.FabricDatagen"
+      }
+    ],
     "main": [
       {
         "adapter": "kotlin",
-        "value": "org.tywrapstudios.redwork.platforms.fabric.TemplateFabric"
+        "value": "org.tywrapstudios.redwork.platform.fabric.RedworkFabric"
       }
     ]
   },

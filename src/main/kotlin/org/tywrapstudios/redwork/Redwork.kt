@@ -23,6 +23,6 @@ object Redwork {
         ItemRegistry.register()
 
         //? if fabric
-        //REGISTRATE.register();
+        REGISTRATE.register()
     }
 }

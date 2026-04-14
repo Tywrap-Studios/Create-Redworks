@@ -2,13 +2,18 @@ package org.tywrapstudios.redwork.registry
 
 import com.tterrag.registrate.util.entry.ItemEntry
 import com.tterrag.registrate.util.entry.RegistryEntry
+import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
 import org.tywrapstudios.redwork.Redwork
 
 object ItemRegistry {
-    val CREATIVE_TAB: RegistryEntry<CreativeModeTab, CreativeModeTab> =
-        Redwork.REGISTRATE.defaultCreativeTab("main") { builder ->
+    //? if neoforge {
+    /*val CREATIVE_TAB: RegistryEntry<CreativeModeTab, CreativeModeTab> =
+    *///?} else {
+    val CREATIVE_TAB: RegistryEntry<CreativeModeTab> =
+    //?}
+        Redwork.REGISTRATE.defaultCreativeTab("create_redworks") { builder ->
                 builder.build()
             }.register()
 
@@ -18,7 +23,11 @@ object ItemRegistry {
         return Redwork.REGISTRATE
             .item(name, ::Item)
             .lang(translation)
-            .tab(CREATIVE_TAB.key!!)
+            //? if fabric {
+            .tab(BuiltInRegistries.CREATIVE_MODE_TAB.getResourceKey(CREATIVE_TAB.get()).get())
+            //?} else {
+            /*.tab(CREATIVE_TAB.key!!)
+            *///?}
             .defaultModel()
             .register()
     }

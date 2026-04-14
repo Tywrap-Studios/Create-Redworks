@@ -1,14 +1,14 @@
 //? if fabric {
-/*package org.tywrapstudios.redwork.platform.fabric
+package org.tywrapstudios.redwork.platform.fabric
 
 import org.tywrapstudios.redwork.platform.ModPlatform
-import org.tywrapstudios.redwork.TemplateInit
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.loader.api.FabricLoader
+import org.tywrapstudios.redwork.Redwork
 
 class RedworkFabric : ModInitializer {
     override fun onInitialize() {
-        TemplateInit.entrypoint(FabricPlatform())
+        Redwork.entrypoint(FabricPlatform())
     }
 
     class FabricPlatform : ModPlatform {
@@ -21,4 +21,4 @@ class RedworkFabric : ModInitializer {
         }
     }
 }
-*///?}
+//?}

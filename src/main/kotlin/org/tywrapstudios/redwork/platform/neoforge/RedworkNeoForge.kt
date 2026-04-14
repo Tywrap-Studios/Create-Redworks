@@ -1,5 +1,5 @@
 //? if neoforge {
-package org.tywrapstudios.redwork.platform.neoforge
+/*package org.tywrapstudios.redwork.platform.neoforge
 
 import org.tywrapstudios.redwork.platform.ModPlatform
 import org.tywrapstudios.redwork.Redwork
@@ -9,11 +9,13 @@ import net.neoforged.bus.api.IEventBus
 import net.neoforged.fml.ModContainer
 import net.neoforged.fml.ModList
 import net.neoforged.fml.common.Mod
+import org.tywrapstudios.redwork.platform.neoforge.data.NeoForgeDatagen
 
 @Mod(/*$ annotation_id*/"redwork")
 class RedworkNeoForge(bus: IEventBus, container: ModContainer, kotlinModContainer: KotlinModContainer, dist: Dist) {
     init {
         Redwork.REGISTRATE.registerEventListeners(bus)
+        bus.addListener(NeoForgeDatagen::onGatherData)
         Redwork.entrypoint(NeoForgePlatform())
     }
 
@@ -26,4 +28,4 @@ class RedworkNeoForge(bus: IEventBus, container: ModContainer, kotlinModContaine
             return ModList.get().isLoaded(id)
         }
     }
-} //?}
+} *///?}

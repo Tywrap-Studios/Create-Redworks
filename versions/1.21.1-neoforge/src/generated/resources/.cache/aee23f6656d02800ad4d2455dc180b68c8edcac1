@@ -1,0 +1,4 @@
+// 1.21.1	2026-04-08T22:43:56.3608733	Registrate Provider for redwork [Registries, Data Maps, Recipes, Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
+82932cec83eccd712ae8d63c313c06086b865642 assets/redwork/lang/en_ud.json
+f769e03743acdd434b7696a93c96124102530b0a assets/redwork/lang/en_us.json
+8c772aaf42d775c2bee7e62a53a906a79f496825 assets/redwork/models/item/advanced_transceiver.json
