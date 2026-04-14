@@ -1,4 +1,5 @@
-package org.tywrapstudios.redwork.platform.fabric.data
+//? if fabric {
+/*package org.tywrapstudios.redwork.platform.fabric.data
 
 import io.github.fabricators_of_create.porting_lib.data.ExistingFileHelper
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint
@@ -13,3 +14,4 @@ class FabricDatagen : DataGeneratorEntrypoint {
         Redwork.REGISTRATE.setupDatagen(pack, helper)
     }
 }
+*///?}

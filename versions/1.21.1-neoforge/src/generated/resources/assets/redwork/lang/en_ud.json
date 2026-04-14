@@ -1,4 +1,9 @@
 {
-  "item.redwork.advanced_transceiver": "ɹǝʌıǝɔsuɐɹ⟘ pǝɔuɐʌpⱯ",
+  "item.redwork.antenna": "ɐuuǝʇuⱯ",
+  "item.redwork.io_base": "ǝsɐᗺ O/I",
+  "item.redwork.network_interface": "ǝɔɐɟɹǝʇuI ʞɹoʍʇǝN",
+  "item.redwork.sub_ghz_receiver": "ɹǝʌıǝɔǝᴚ oıpɐᴚ zH⅁-qnS",
+  "item.redwork.sub_ghz_transceiver": "ɹǝʌıǝɔsuɐɹ⟘ oıpɐᴚ zH⅁-qnS",
+  "item.redwork.sub_ghz_transmitter": "ɹǝʇʇıɯsuɐɹ⟘ oıpɐᴚ zH⅁-qnS",
   "itemGroup.redwork.create_redworks": "sʞɹoʍpǝᴚ ǝʇɐǝɹƆ"
 }

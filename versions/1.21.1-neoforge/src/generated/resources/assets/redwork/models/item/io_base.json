@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "redwork:item/advanced_transceiver"
+    "layer0": "redwork:item/io_base"
   }
 }

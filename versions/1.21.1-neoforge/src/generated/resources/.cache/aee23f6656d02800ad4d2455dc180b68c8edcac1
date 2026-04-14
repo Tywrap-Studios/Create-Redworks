@@ -1,4 +1,11 @@
-// 1.21.1	2026-04-08T22:43:56.3608733	Registrate Provider for redwork [Registries, Data Maps, Recipes, Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
-82932cec83eccd712ae8d63c313c06086b865642 assets/redwork/lang/en_ud.json
-f769e03743acdd434b7696a93c96124102530b0a assets/redwork/lang/en_us.json
-8c772aaf42d775c2bee7e62a53a906a79f496825 assets/redwork/models/item/advanced_transceiver.json
+// 1.21.1	2026-04-14T23:05:18.5355044	Registrate Provider for redwork [Registries, Data Maps, Recipes, Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
+c40543982265c248c53dd2691fdd8148b55b1652 assets/redwork/lang/en_ud.json
+f0d83f658ffc826e52ed3c47844c0843e1765c3c assets/redwork/lang/en_us.json
+7da009405256a8c38c428dd29c26f8d6c03f8aa5 assets/redwork/models/item/antenna.json
+d025bb76897ae945fe91399ffe34bb885d4fe0bc assets/redwork/models/item/io_base.json
+2be670cacd7301817f8212ed585c907c9191ea4b assets/redwork/models/item/network_interface.json
+5c20602a43305509c971aefd9f0005c14a25f5b6 assets/redwork/models/item/sub_ghz_receiver.json
+150bb85368c036f1e6b43fcd135927b1c267ee52 assets/redwork/models/item/sub_ghz_transceiver.json
+07c0881e4c0a9ae2cb43c9265bafdcaadd858d68 assets/redwork/models/item/sub_ghz_transmitter.json
+439c2d3bb36ce6737f50a01709148cc3cb13b3f7 data/redwork/advancement/recipes/misc/antenna.json
+206ec2fa7229bfdfef1f16ad62dc498a968485ce data/redwork/recipe/antenna.json

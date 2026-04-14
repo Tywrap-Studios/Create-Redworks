@@ -1,11 +1,23 @@
 package org.tywrapstudios.redwork.registry
 
+import com.simibubi.create.AllItems
+import com.simibubi.create.foundation.data.CreateRegistrate
+import com.tterrag.registrate.builders.ItemBuilder
+import com.tterrag.registrate.providers.DataGenContext
+import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.util.entry.ItemEntry
 import com.tterrag.registrate.util.entry.RegistryEntry
-import net.minecraft.core.registries.BuiltInRegistries
+import com.tterrag.registrate.util.nullness.NonNullFunction
+import net.minecraft.data.recipes.RecipeBuilder
+import net.minecraft.data.recipes.RecipeCategory
+import net.minecraft.data.recipes.ShapedRecipeBuilder
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.Items
+import net.minecraft.world.level.ItemLike
+import org.openjdk.nashorn.internal.objects.NativeRegExp.source
 import org.tywrapstudios.redwork.Redwork
+import org.tywrapstudios.redwork.dataIngredient
 
 object ItemRegistry {
     //? if neoforge {
@@ -17,11 +29,61 @@ object ItemRegistry {
                 builder.build()
             }.register()
 
-    val ADVANCED_TRANSCEIVER = item("advanced_transceiver", "Advanced Transceiver")
+    val ANTENNA = simpleRecipe("antenna", "Antenna", Items.IRON_NUGGET) { context, _ ->
+        val source = Items.IRON_NUGGET
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+            .pattern("X")
+            .pattern("X")
+            .define('X', source)
+    }
+    val IO_BASE = simpleRecipe("io_base", "I/O Base", AllItems.IRON_SHEET) { context, _ ->
+        val sheet = AllItems.IRON_SHEET
+        val nugget = Items.IRON_NUGGET
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+            .pattern("X X")
+            .pattern("YYY")
+            .define('X', nugget)
+            .define('Y', sheet)
+    }
+    val NETWORK_INTERFACE = simpleRecipe("network_interface", "Network Interface", AllItems.POLISHED_ROSE_QUARTZ) { context, _ ->
+        val io = IO_BASE
+        val rose = AllItems.POLISHED_ROSE_QUARTZ
+        val repeater = Items.REPEATER
+        val comparator = Items.COMPARATOR
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+            .pattern(" X ")
+            .pattern("ZYA")
+            .define('X', rose)
+            .define('Y', io)
+            .define('Z', repeater)
+            .define('A', comparator)
+    }
+    val SUB_GHZ_RECEIVER = simple("sub_ghz_receiver", "Sub-GHz Radio Receiver")
+    val SUB_GHZ_TRANSMITTER = simple("sub_ghz_transmitter", "Sub-GHz Radio Transmitter")
+    val SUB_GHZ_TRANSCEIVER = simple("sub_ghz_transceiver", "Sub-GHz Radio Transceiver")
 
-    private fun item(name: String, translation: String): ItemEntry<Item> {
+    private fun simple(name: String, translation: String): ItemEntry<Item> {
+        return simple(name, translation, ::Item)
+    }
+
+    private fun simple(name: String, translation: String, itemFactory: NonNullFunction<Item.Properties, Item>): ItemEntry<Item> {
+        return simpleItemBuilder(name, translation, itemFactory).register()
+    }
+
+    private fun simpleRecipe(name: String, translation: String, criterion: ItemLike, recipe: (context: DataGenContext<Item, Item>, provider: RegistrateRecipeProvider) -> RecipeBuilder): ItemEntry<Item> {
+        return simpleItemBuilder(name, translation, ::Item)
+            .recipe { context, provider ->
+                val criterion = criterion.dataIngredient()
+                recipe(context, provider)
+                    .unlockedBy("has_" + provider.safeName(criterion), criterion.getCriterion(provider))
+                    .save(provider, provider.safeId(context.get()))
+            }
+            .register()
+    }
+
+    private fun simpleItemBuilder(name: String, translation: String, itemFactory: NonNullFunction<Item.Properties, Item>): ItemBuilder<Item, CreateRegistrate> {
         return Redwork.REGISTRATE
-            .item(name, ::Item)
+            .item(name, itemFactory)
             .lang(translation)
             //? if fabric {
             /*.tab(BuiltInRegistries.CREATIVE_MODE_TAB.getResourceKey(CREATIVE_TAB.get()).get())
@@ -29,7 +91,6 @@ object ItemRegistry {
             .tab(CREATIVE_TAB.key!!)
             //?}
             .defaultModel()
-            .register()
     }
 
     fun register() {}

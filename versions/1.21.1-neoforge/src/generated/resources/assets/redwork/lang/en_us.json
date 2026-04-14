@@ -1,4 +1,9 @@
 {
-  "item.redwork.advanced_transceiver": "Advanced Transceiver",
+  "item.redwork.antenna": "Antenna",
+  "item.redwork.io_base": "I/O Base",
+  "item.redwork.network_interface": "Network Interface",
+  "item.redwork.sub_ghz_receiver": "Sub-GHz Radio Receiver",
+  "item.redwork.sub_ghz_transceiver": "Sub-GHz Radio Transceiver",
+  "item.redwork.sub_ghz_transmitter": "Sub-GHz Radio Transmitter",
   "itemGroup.redwork.create_redworks": "Create Redworks"
 }
