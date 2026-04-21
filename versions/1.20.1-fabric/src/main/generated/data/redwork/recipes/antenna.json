@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:iron_nugget"
+    },
+    "Y": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "Y",
+    "X",
+    "X"
+  ],
+  "result": {
+    "item": "redwork:antenna"
+  },
+  "show_notification": true
+}

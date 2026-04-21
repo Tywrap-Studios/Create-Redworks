@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "redwork:item/sub_ghz_receiver"
+  }
+}

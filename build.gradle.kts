@@ -123,6 +123,7 @@ loom {
 fabricApi {
     configureDataGeneration {
         client = true
+        modId = mod.id
     }
 }
 

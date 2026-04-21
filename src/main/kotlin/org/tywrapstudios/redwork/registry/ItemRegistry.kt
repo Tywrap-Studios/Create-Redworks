@@ -8,24 +8,31 @@ import com.tterrag.registrate.providers.RegistrateRecipeProvider
 import com.tterrag.registrate.util.entry.ItemEntry
 import com.tterrag.registrate.util.entry.RegistryEntry
 import com.tterrag.registrate.util.nullness.NonNullFunction
+import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.RecipeBuilder
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.ShapedRecipeBuilder
+import net.minecraft.resources.ResourceKey
+import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.level.ItemLike
-import org.openjdk.nashorn.internal.objects.NativeRegExp.source
 import org.tywrapstudios.redwork.Redwork
 import org.tywrapstudios.redwork.dataIngredient
+//? if !neoforge
+//import org.tywrapstudios.redwork.getCriterion
 
 object ItemRegistry {
+    const val TAB_ID = "create_redworks"
+
     //? if neoforge {
     val CREATIVE_TAB: RegistryEntry<CreativeModeTab, CreativeModeTab> =
     //?} else {
     /*val CREATIVE_TAB: RegistryEntry<CreativeModeTab> =
     *///?}
-        Redwork.REGISTRATE.defaultCreativeTab("create_redworks") { builder ->
+        Redwork.REGISTRATE.defaultCreativeTab(TAB_ID) { builder ->
                 builder.build()
             }.register()
 
@@ -118,7 +125,7 @@ object ItemRegistry {
             .item(name, itemFactory)
             .lang(translation)
             //? if fabric {
-            /*.tab(BuiltInRegistries.CREATIVE_MODE_TAB.getResourceKey(CREATIVE_TAB.get()).get())
+            /*.tab(ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation("redwork", TAB_ID)))
             *///?} else {
             .tab(CREATIVE_TAB.key!!)
             //?}

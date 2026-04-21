@@ -1,0 +1,21 @@
+// 1.20.1	2026-04-21T14:39:04.2878294	Create: Redworks/Registrate Provider for redwork [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+b7eb1a52d55fd4afac43f57ecae53e7d6f9922cf data\redwork\recipes\io_base.json
+51c6d2ad7c1edf80980bdb98458844e5d7f713e1 data\redwork\advancements\recipes\misc\sub_ghz_transmitter.json
+f5d5117b085df8f4285e25584022cc490088ad42 data\redwork\advancements\recipes\misc\antenna.json
+f0d83f658ffc826e52ed3c47844c0843e1765c3c assets\redwork\lang\en_us.json
+99e2bc345f3b44140bd530f11d39e03737100f2b data\redwork\advancements\recipes\misc\sub_ghz_receiver.json
+150bb85368c036f1e6b43fcd135927b1c267ee52 assets\redwork\models\item\sub_ghz_transceiver.json
+37ee4614c38ef8a15206202333aef3dc3875c826 data\redwork\recipes\sub_ghz_transmitter.json
+f19886e6a5b7211bb897f7fdda8657a14cba1191 data\redwork\advancements\recipes\misc\io_base.json
+1d28d24aa662d5ced1c250f4cc683543b4a32a46 data\redwork\advancements\recipes\misc\network_interface.json
+447def6aed42daa74a75a46964e3799cd3dd7688 data\redwork\recipes\network_interface.json
+826b3805eecb3f67a9fda745c5f9a01ecc4e3f4e data\redwork\recipes\sub_ghz_transceiver.json
+5c20602a43305509c971aefd9f0005c14a25f5b6 assets\redwork\models\item\sub_ghz_receiver.json
+d025bb76897ae945fe91399ffe34bb885d4fe0bc assets\redwork\models\item\io_base.json
+15a2a5460ca628eb7eee1d4f74a1bfe10a8bbda2 data\redwork\recipes\antenna.json
+7da009405256a8c38c428dd29c26f8d6c03f8aa5 assets\redwork\models\item\antenna.json
+b74cf085cdb42d55880b8b2fc8be03f3ced47969 data\redwork\recipes\sub_ghz_receiver.json
+597f0b1cd1063f84ac71a88984b39a8c0e3ec78f data\redwork\advancements\recipes\misc\sub_ghz_transceiver.json
+c40543982265c248c53dd2691fdd8148b55b1652 assets\redwork\lang\en_ud.json
+2be670cacd7301817f8212ed585c907c9191ea4b assets\redwork\models\item\network_interface.json
+07c0881e4c0a9ae2cb43c9265bafdcaadd858d68 assets\redwork\models\item\sub_ghz_transmitter.json

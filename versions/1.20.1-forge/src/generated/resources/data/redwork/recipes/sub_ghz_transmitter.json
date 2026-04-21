@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "redwork:antenna"
+    },
+    "Y": {
+      "item": "create:copper_sheet"
+    },
+    "Z": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "  X",
+    "ZYZ"
+  ],
+  "result": {
+    "item": "redwork:sub_ghz_transmitter"
+  },
+  "show_notification": true
+}

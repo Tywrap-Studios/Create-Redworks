@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "redwork:sub_ghz_transmitter"
+    },
+    "Y": {
+      "item": "create:copper_sheet"
+    },
+    "Z": {
+      "item": "redwork:sub_ghz_receiver"
+    }
+  },
+  "pattern": [
+    "XYZ"
+  ],
+  "result": {
+    "item": "redwork:sub_ghz_transceiver"
+  },
+  "show_notification": true
+}
