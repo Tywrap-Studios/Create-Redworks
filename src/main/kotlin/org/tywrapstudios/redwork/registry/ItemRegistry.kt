@@ -31,10 +31,13 @@ object ItemRegistry {
 
     val ANTENNA = simpleRecipe("antenna", "Antenna", Items.IRON_NUGGET) { context, _ ->
         val source = Items.IRON_NUGGET
+        val redstone = Items.REDSTONE
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+            .pattern("Y")
             .pattern("X")
             .pattern("X")
             .define('X', source)
+            .define('Y', redstone)
     }
     val IO_BASE = simpleRecipe("io_base", "I/O Base", AllItems.IRON_SHEET) { context, _ ->
         val sheet = AllItems.IRON_SHEET
@@ -58,9 +61,38 @@ object ItemRegistry {
             .define('Z', repeater)
             .define('A', comparator)
     }
-    val SUB_GHZ_RECEIVER = simple("sub_ghz_receiver", "Sub-GHz Radio Receiver")
-    val SUB_GHZ_TRANSMITTER = simple("sub_ghz_transmitter", "Sub-GHz Radio Transmitter")
-    val SUB_GHZ_TRANSCEIVER = simple("sub_ghz_transceiver", "Sub-GHz Radio Transceiver")
+    val SUB_GHZ_RECEIVER = simpleRecipe("sub_ghz_receiver", "Sub-GHz Radio Receiver", ANTENNA) { context, _ ->
+        val antenna = ANTENNA
+        val copperSheet = AllItems.COPPER_SHEET
+        val ironSheet = AllItems.IRON_SHEET
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+            .pattern("  X")
+            .pattern("YZY")
+            .define('X', antenna)
+            .define('Y', copperSheet)
+            .define('Z', ironSheet)
+    }
+    val SUB_GHZ_TRANSMITTER = simpleRecipe("sub_ghz_transmitter", "Sub-GHz Radio Transmitter", ANTENNA) { context, _ ->
+        val antenna = ANTENNA
+        val copperSheet = AllItems.COPPER_SHEET
+        val ironSheet = AllItems.IRON_SHEET
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+            .pattern("  X")
+            .pattern("ZYZ")
+            .define('X', antenna)
+            .define('Y', copperSheet)
+            .define('Z', ironSheet)
+    }
+    val SUB_GHZ_TRANSCEIVER = simpleRecipe("sub_ghz_transceiver", "Sub-GHz Radio Transceiver", ANTENNA) { context, _ ->
+        val transmitter = SUB_GHZ_TRANSMITTER
+        val receiver = SUB_GHZ_RECEIVER
+        val sheet = AllItems.COPPER_SHEET
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, context.get())
+            .pattern("XYZ")
+            .define('X', transmitter)
+            .define('Y', sheet)
+            .define('Z', receiver)
+    }
 
     private fun simple(name: String, translation: String): ItemEntry<Item> {
         return simple(name, translation, ::Item)

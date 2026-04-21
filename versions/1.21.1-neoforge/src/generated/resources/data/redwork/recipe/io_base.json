@@ -6,16 +6,15 @@
       "item": "minecraft:iron_nugget"
     },
     "Y": {
-      "item": "minecraft:redstone"
+      "item": "create:iron_sheet"
     }
   },
   "pattern": [
-    "Y",
-    "X",
-    "X"
+    "X X",
+    "YYY"
   ],
   "result": {
     "count": 1,
-    "id": "redwork:antenna"
+    "id": "redwork:io_base"
   }
 }

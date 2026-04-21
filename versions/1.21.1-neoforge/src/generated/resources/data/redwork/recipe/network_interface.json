@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:comparator"
+    },
+    "X": {
+      "item": "create:polished_rose_quartz"
+    },
+    "Y": {
+      "item": "redwork:io_base"
+    },
+    "Z": {
+      "item": "minecraft:repeater"
+    }
+  },
+  "pattern": [
+    " X ",
+    "ZYA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "redwork:network_interface"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-14T23:05:18.5355044	Registrate Provider for redwork [Registries, Data Maps, Recipes, Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
+// 1.21.1	2026-04-21T13:49:58.1948299	Registrate Provider for redwork [Registries, Data Maps, Recipes, Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
 c40543982265c248c53dd2691fdd8148b55b1652 assets/redwork/lang/en_ud.json
 f0d83f658ffc826e52ed3c47844c0843e1765c3c assets/redwork/lang/en_us.json
 7da009405256a8c38c428dd29c26f8d6c03f8aa5 assets/redwork/models/item/antenna.json
@@ -8,4 +8,14 @@ d025bb76897ae945fe91399ffe34bb885d4fe0bc assets/redwork/models/item/io_base.json
 150bb85368c036f1e6b43fcd135927b1c267ee52 assets/redwork/models/item/sub_ghz_transceiver.json
 07c0881e4c0a9ae2cb43c9265bafdcaadd858d68 assets/redwork/models/item/sub_ghz_transmitter.json
 439c2d3bb36ce6737f50a01709148cc3cb13b3f7 data/redwork/advancement/recipes/misc/antenna.json
-206ec2fa7229bfdfef1f16ad62dc498a968485ce data/redwork/recipe/antenna.json
+b0fad3ecb26a218d41a7373075de75cf2333dcf3 data/redwork/advancement/recipes/misc/io_base.json
+0e9b7348d2cf03d2550934098a6a21231aaad746 data/redwork/advancement/recipes/misc/network_interface.json
+e855d72af9d8d6d8601bb543ad5ffe664631ad44 data/redwork/advancement/recipes/misc/sub_ghz_receiver.json
+e63746fea717bb3629675d82e45df8458baf12ed data/redwork/advancement/recipes/misc/sub_ghz_transceiver.json
+7e82236a7def9cf4d74e6f262349a0f255d8fa04 data/redwork/advancement/recipes/misc/sub_ghz_transmitter.json
+d6d02d38203891ebc4bab42407cbfdda15a8199f data/redwork/recipe/antenna.json
+5df15279fc8b48affa650dc0633b2de7b202dbfb data/redwork/recipe/io_base.json
+d5762748b6045a5579b38d60ef5bcc8cb21b7d43 data/redwork/recipe/network_interface.json
+5fb93f9d7dbbd856a80d1eb4e88ad61aeee4dfd3 data/redwork/recipe/sub_ghz_receiver.json
+1c850319c9995f538188a90b5aa9907d4d2f9224 data/redwork/recipe/sub_ghz_transceiver.json
+8728b3d16325239eebea3e6f43651ad55a15b93f data/redwork/recipe/sub_ghz_transmitter.json
