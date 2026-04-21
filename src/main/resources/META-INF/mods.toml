@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "*"
-license = "CC0"
+license = "TYSPAL-2.0"
 issueTrackerURL = "https://AuthorExample/TempLate/issues"
 
 [[mods]]

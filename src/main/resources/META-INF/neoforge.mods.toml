@@ -1,6 +1,6 @@
 modLoader = "klf"
 loaderVersion = "[1,)"
-license = "CC0"
+license = "TYSPAL-2.0"
 issueTrackerURL = "https://AuthorExample/TempLate/issues"
 
 [[mods]]
